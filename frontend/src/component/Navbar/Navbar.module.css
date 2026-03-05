@@ -1,0 +1,78 @@
+.container{
+    padding: 1.2rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.NavBarOptionContainer{
+   
+    display: flex;
+   
+}
+ .buttonJoin{
+    background-color: rgb(147, 73, 216);
+    color: white;
+    cursor: pointer;
+    /* width: 5rem;
+    height: 1.7rem; */
+    border-radius: 0.6rem;
+    text-box: border-box;
+    padding-block: 0.6rem;
+    padding-inline: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+
+}
+.firstDiv {
+  position: absolute;        /* ⭐ This makes it float */
+  top: 3rem;
+  right: 0.7rem;                  /* or adjust as needed */
+  width: 15rem;              /* Fix: not width-max */
+  padding: 1rem;
+  background: white;
+  border: 2px solid rgb(219, 201, 201);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;              /* Makes sure it stays on top */
+}
+.button{
+    width: 12.5rem;
+    height: 2rem;
+    border-radius: 0.6rem;
+    background-color: rgb(151, 141, 160);
+    /* color: white; */
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    box-sizing: border-box; 
+    border: none;
+    transition: background-color 0.3s ease;
+
+}
+.button > button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: rgb(120, 110, 130);
+}
+
+ 
+/* click effect (mouse press) */
+.button:active {
+  background-color: #898989;
+  color: white;
+  transform: scale(0.96);
+}
+.signup:hover{
+   color: rgb(127, 119, 119); 
+}

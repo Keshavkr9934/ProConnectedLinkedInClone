@@ -1,0 +1,22 @@
+POST http://localhost:5000/resister HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test",
+    "username":"duvedi",
+    "email":"duvedi@gmail.com",
+    "password":"123450"
+}
+``` 
+
+### Login
+POST http://localhost:5000/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"test@123gmail.com",
+        "password":"12345"
+}
+```
+### Get All Users
+GET http://localhost:5000/user/get_All_Users_Profile HTTP/1.1

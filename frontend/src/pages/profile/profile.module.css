@@ -1,0 +1,298 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.3rem;
+  background-color: white;
+  width: 100%;
+}
+
+.backDropContainer {
+  width: 100%;
+  height: 30vh;
+  background: url(https://images.pexels.com/photos/15819293/pexels-photo-15819293.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 20px;
+}
+.backDropImage > img {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: -30%;
+  left: 8%;
+  text-align: center;
+}
+.profileContainer_details {
+  /* display: flex; */
+  padding-top: 5.7rem;
+}
+.connectionButton {
+  background-color: #4065c4;
+  color: white;
+  width: 6.6rem;
+  height: 1.7rem;
+  border-radius: 7px;
+  font-size: 180px 204px;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.connectionButton:hover {
+  /* background-color: #2c4a9e; */
+  background-color: #3e9e8e;
+  transform: scale(1.05);
+  font-size: 0.8rem;
+}
+.recentActivityPost{
+  display: flex;
+  /* flex-direction: column; */
+  /* gap: 1rem; */
+  /* margin: 1rem; */
+  /* height: 1rem; */
+  /* margin-top: -25%; */
+
+}
+.post_card{
+  display: flex;
+  /* gap: 1rem; */
+  /* margin: 1rem 0; */
+  /* align-items: center; */
+  flex-direction: row;
+  margin-top: -25%;
+  gap: 0.2rem;
+}
+.post_profile_image{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10%;
+  object-fit: cover;
+}
+.recentActivity{
+ 
+}
+.recentActivity {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #1f2937;
+  /* align-items: center; */
+}
+
+.recentActivityPost {
+  /* margin-bottom: 3rem; */
+  /* margin-left: 2rem; */
+  /* align-items: center; */
+
+}
+
+.post_card {
+  background: #ffffff;
+  border-radius: 12px;
+  /* margin-right: 1rem; */
+  align-items: center;
+  padding: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.post_card_profile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.post_profile_image {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+}
+
+.post_card_content {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.post_card_content p {
+  margin: 0;
+  word-wrap: break-word;
+}
+.editProfileButton {
+   position: absolute;
+  /* inset: 0; top right bottom left = 0 */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+  bottom: -29.6%;
+  left: 8%;
+
+  opacity: 0;
+  cursor: pointer;
+  /* font-size: 0.9rem; */
+  transition: opacity 0.3s ease;
+  /* background-color: rgb(205, 194, 194); */
+}
+.backDropImage:hover .editProfileButton{
+  opacity: 1;
+  z-index: 1;
+}
+.editProfileButton p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* top: 1rem; */
+  left: 30%;
+  bottom: 33%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.profileContainer_details input{
+  outline: none;
+  border-style: none;
+  padding-inline: 10px;
+  padding-block: 9px;
+}
+
+.profileName {
+  display: inline-block;
+  min-width: 0rem; 
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+  width: fit-content;
+  min-width: 6ch;
+  max-width: 9ch;
+  padding: 0;
+}
+.updateProfileButton{
+  background-color: #4065c4;
+  color: white;
+  width: 6.6rem;
+  height: 1.7rem;
+  border-radius: 7px;
+  font-size: 180px 204px;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.updateProfileButton:hover {
+  /* background-color: #2c4a9e; */
+  background-color: #3e9e8e;
+  transform: scale(1.05);
+  font-size: 0.8rem;
+}
+.profileBio{
+  outline: none;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  color: #374151;
+}
+.editWorkHistoryButton{
+  background-color: #4065c4;
+  color: white;
+  margin: 0.5rem 0;
+  width: 5.5rem;
+  height: 1.7rem;
+  border-radius: 7px;
+  font-size: 180px 204px;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.commentContainer {
+  position: fixed;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal box for all comments */
+.allComments {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 27%;
+  background-color: #f5f3f3;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  position: relative; /* allows bottom bar to be placed inside */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  padding: 0.3rem;
+}
+.inputField {
+  padding-inline: 1.7rem;
+  padding-block: 0.6rem;
+  outline: none;
+  border: 2px solid #428be3;
+  border-radius: 11px;
+  /* width: 100%; */
+  /* margin-top: 0.5rem; */
+  margin: 0.3rem;
+}
+.workHistoryContent{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.4;
+}
+.workHistoryItem{
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  /* margin-right: 1rem; */
+  height: fit-content;
+  width: fit-content;
+  align-items: center;
+  margin-top: 0.4rem;
+  padding: 0.9rem;
+  box-shadow: 0 4px 12px rgba(36, 27, 27, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.workHistoryItemContainer{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  
+}
+

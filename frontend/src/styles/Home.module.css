@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* .container {
+    display: flex;
+   font-family: "Poppins", sans-serif;
+   padding: 1.2rem;
+}
+.mainContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:4rem;
+   padding-inline: 2rem;
+   height: 80vh;
+}
+.mainContainer_left{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+.mainContainer_right{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+.mainContainer_left > p:nth-child(1){
+    font-size: 2.9rem;
+    background: -webkit-linear-gradient(45deg,  #332d2d, #c13939);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animationsontex 6s ease-in-out ;
+}
+@keyframes  animationsontex {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.mainContainer_left > p:nth-child(2){
+    color: gray;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+ .mainContainer_left > div.buttonjoin{
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 11px;
+    padding-inline: 0.7rem;
+    padding-block: 0.3rem;
+} */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mainContainer_left {
+  flex: 1;
+}
+
+.mainContainer_left p:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1c1e21;
+  margin-bottom: 20px;
+}
+
+.mainContainer_left p:nth-child(2) {
+  font-size: 18px;
+  color: #606770;
+  margin-bottom: 30px;
+}
+
+.buttonjoin {
+  display: inline-block;
+  background-color: #1877f2;
+  padding: 14px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buttonjoin p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.buttonjoin:hover {
+  background-color: #166fe5;
+  transform: scale(1.05);
+}
+
+.mainContainer_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.mainContainer_left > p:first-child {
+    font-size: 2.9rem;
+    font-weight: 600;
+
+    background: linear-gradient(45deg, #332d2d, #c13939);
+    background-size: 200% 200%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    animation: animationsontex 6s ease-in-out;
+}
+
+/* @keyframes animationsontex {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+ @keyframes  animationsontex {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mainContainer_right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+/* Tablet View */
+@media (max-width: 992px) {
+  .mainContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mainContainer_left p:first-child {
+    font-size: 32px;
+  }
+
+  .mainContainer_left p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+  .mainContainer_left p:first-child {
+    font-size: 24px;
+  }
+
+  .mainContainer_left p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .buttonjoin {
+    padding: 12px 20px;
+  }
+}
