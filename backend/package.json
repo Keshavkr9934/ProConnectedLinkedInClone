@@ -12,7 +12,8 @@
 
   "scripts": {
 
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "prod": "node server.js"
 
   },
 
