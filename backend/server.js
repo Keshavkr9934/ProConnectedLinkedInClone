@@ -20,17 +20,20 @@ app.use(userRoutes);
 app.use(postRoutes);
 app.use(express.static('uploads'));
 
-const start= async()=>{
-    try{
-        await mongoose.connect(process.env.MONGODB_URL,{
-            // useNewUrlParser:true,
-            // useUnifiedTopology:true,
-            // useCreateIndex:true,
 
-        });
-        app.listen(5000,()=>console.log("server started"));
-    }catch(error){
-        console.log(error);
-    }
-}
+const start = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URL);
+
+    const PORT = process.env.PORT || 5000;
+
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`server started on port ${PORT}`);
+    });
+
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 start();
