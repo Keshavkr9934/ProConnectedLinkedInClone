@@ -272,7 +272,7 @@ export default Username;
 
 export async function getServerSideProps(context) {
   const request =  await axios.get(
-      `http://localhost:5000/user/get_user_profile_and_base_on_username`,
+      `https://proconnectedlinkedinclone.onrender.com/user/get_user_profile_and_base_on_username`,
       {
       params: {
         username: context.params.username, // Assuming the username is passed as a URL parameter
