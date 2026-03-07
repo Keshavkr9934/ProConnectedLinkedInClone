@@ -24,6 +24,7 @@ export default function Home() {
           <div className={styles.mainContainer_left}>
             <p>Connect with freind without Exaggeration</p>
             <p>A True Social Media Platform , With Stories No Blufs !</p>
+            <p>Made by Keshav (Begusarai)</p>
             <div
               onClick={() => {
                 router.push("/login");
