@@ -43,8 +43,9 @@ export default function Home() {
               priority
             />
           </div>
+          
         </div>
-         <p>Made by Keshav (Begusarai)</p>
+         
       </div>
     </UserLayout>
   );
